@@ -6,14 +6,7 @@ Translate an enterprise generative-AI opportunity into a staged implementation p
 
 A strategy case covering use-case selection, implementation phases, stakeholders, risk controls, success measures, and investment assumptions.
 
-```mermaid
-flowchart TD
-    N0["Documentation pilot proposal"] --> N1
-    N1["Measure factuality and reviewer effort"] --> N2
-    N2["Compare with manual-process baseline"] --> N3
-    N3["Apply access and safety review gates"] --> N4
-    N4["Expand only after acceptance evidence"]
-```
+![Implementation mechanism: Documentation pilot proposal → Measure factuality and reviewer effort → Compare with manual-process baseline → Apply access and safety review gates → Expand only after acceptance evidence](assets/mechanism.svg)
 
 ## Worked decision
 
