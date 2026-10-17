@@ -40,3 +40,7 @@ python scripts/validate_source.py
 ## Limitations
 
 This is a strategy case study, not an implemented software service or evidence of a client engagement. Assumptions need current operational and financial validation before investment.
+
+## Reuse
+
+The original contributions listed in [LICENSING.md](LICENSING.md) are available under [MIT](LICENSE). This scoped grant preserves upstream notices and separate dataset, simulator, notebook and checkpoint terms.
