@@ -1,0 +1,23 @@
+{
+  "repository": "generative-ai-adoption-roadmap",
+  "profiles": {
+    "checks": {
+      "scope": "Written strategy/source checks; no deployed service or measured outcome",
+      "commands": [
+        [
+          "{python}",
+          "scripts/validate_source.py"
+        ]
+      ]
+    }
+  },
+  "version_packages": [
+    "numpy",
+    "torch",
+    "pandas",
+    "scikit-learn",
+    "gymnasium",
+    "pytest"
+  ],
+  "external_evidence_limits": "See BENCHMARKS.md and DATA.md. Passing contract checks does not certify historical accuracy, live providers, physical safety or business outcomes."
+}

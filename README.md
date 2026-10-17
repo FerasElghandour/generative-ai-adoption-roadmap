@@ -2,6 +2,15 @@
 
 Translate an enterprise generative-AI opportunity into a staged implementation proposal with explicit governance and evaluation gates.
 
+
+
+## Reproduce and inspect
+
+The executable reproduction profile now records exact commands, input/source hashes, dependency versions, logs and pass/fail status. Its scope distinguishes behavior checks from full-data benchmarks.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Implementation
 
 A strategy case covering use-case selection, implementation phases, stakeholders, risk controls, success measures, and investment assumptions.
