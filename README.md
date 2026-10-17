@@ -1,7 +1,5 @@
 # Generative AI Adoption Roadmap
 
-**Feras Elghandour** · Technical case study
-
 Translate an enterprise generative-AI opportunity into a staged implementation proposal with explicit governance and evaluation gates.
 
 ## Implementation
@@ -9,30 +7,29 @@ Translate an enterprise generative-AI opportunity into a staged implementation p
 A strategy case covering use-case selection, implementation phases, stakeholders, risk controls, success measures, and investment assumptions.
 
 ```mermaid
-flowchart LR
-    A[Input preparation] --> B[Implementation]
-    B --> C[Evaluation]
-    C --> D[Results and interpretation]
+flowchart TD
+    N0["Documentation pilot proposal"] --> N1
+    N1["Measure factuality and reviewer effort"] --> N2
+    N2["Compare with manual-process baseline"] --> N3
+    N3["Apply access and safety review gates"] --> N4
+    N4["Expand only after acceptance evidence"]
 ```
+
+## Worked decision
+
+Read the [release-gate scenario](examples/worked-scenario.md): a fluent documentation pilot cannot expand until factuality, reviewer effort and access controls have been measured. This repository is a strategy artifact, so the example applies its existing gates to hypothetical inputs. It is not an implemented agent or an achieved business result.
 
 ## Evidence and results
 
 The repository contains a structured strategy brief recovered from the completed presentation. Targets and financial figures are proposal assumptions, not measured client outcomes.
 
-Results described as saved come from the retained experiment record. See [VALIDATION.md](VALIDATION.md) for the checks performed on this release and their scope.
-
-## Practical relevance
-
-This project demonstrates a strategy case covering use-case selection, implementation phases, stakeholders, risk controls, success measures, and investment assumptions.
-The implementation and evaluation make the trade-offs inspectable for technical review.
+See [VALIDATION.md](VALIDATION.md) for the release checks and their scope.
 
 ## Run locally
 
-```sh
-Read STRATEGY.md
-```
+Read the [strategy brief](STRATEGY.md) and [worked decision](examples/worked-scenario.md).
 
-Prepare the inputs described in [DATA.md](DATA.md) first. Source validation is available without installing model dependencies:
+The strategy is a written proposal. Check its source files with:
 
 ```sh
 python scripts/validate_source.py
@@ -41,7 +38,3 @@ python scripts/validate_source.py
 ## Limitations
 
 This is a strategy case study, not an implemented software service or evidence of a client engagement. Assumptions need current operational and financial validation before investment.
-
-## Development
-
-Changes should include a clear description of the behavior affected and verification appropriate to that behavior. Keep input data, credentials, model caches, and generated artifacts outside version control.
